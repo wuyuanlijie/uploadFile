@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文件上传</title>
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+  <style>
+
+    body,html{
+      margin: 0 auto;
+    }
+    .up-header {
+      width:600px;
+      text-align: center;
+    }
+    .up-content {
+      min-height: 200px;
+      border: 1px solid #CCCCCC;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FAFAFA;
+      color: #999;
+      font-size: 20px;
+      text-align: center;
+    }
+    .up-area {
+      border: 2px dashed #ccc;
+      margin: 10px 20px 20px 20px;
+      width: 300px;
+      min-height: 200px;
+      line-height: 100px;
+      background-color: #fff;
+    }
+    .list-group {
+      margin: 0px auto;;
+      width: 200px;
+      min-height: 100px;
+      padding: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+    .btn {
+
+    }
+    .close {
+      margin-left: 550px;
+      margin-top: -20px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+  <header id="header" class="page-header">
+    <!-- 头部显示 -->
+    <div class="container upload ">
+      <div class="up-header center-block">
+        <h2 >文件上传——两种形式</h2>
+        <div class="input-group"  style="width:600px; display:flex;">
+    			<input type="text" class="form-control" placeholder="在此处粘贴图片网址">
+    			<button type="button" class="btn btn-primary">上传图片</button>
+		    </div>
+      </div>
+      <div class="row">
+        <!-- 拖拽图片到这来 -->
+        <div class="col-md-5 col-md-offset-1 up-content  dragFile">
+          <p style="margin-top:10px;">拖拽图片到这里哟</p>
+          <div class="up-area">
+            <input type="file" style="display:none;" id="fileDrag" name="fileDragselect" multiple>
+            <div class="row">
+              <ul class="list-group clearfix list-drag">
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- 点击按钮上传文件 -->
+        <div class="col-md-5 up-content btnFile">
+          <div class="btn">
+            <button type="button" class="btn btn-success" id="btn"> 本地上传文件</button>
+            <input type="file" style="display:none;" id="fileInput" name="fileselect" multiple>
+          </div>
+          <div class="up-area">
+            <div class="row">
+              <ul class="list-group clearfix list-btn">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+   <script type="text/javascript">
+     //点击本地上传文件
+     $('#btn').click( () => {
+       $('#fileInput').click();
+     })
+     $('#fileInput').change( (event) => {
+       var files = event.target.files;
+       appendFile(files, '.list-btn');
+     })
+
+     //拖拽上传文件 在页面进行预览 上传form用到ajax
+      const dragbox = document.querySelector('.dragFile');
+      dragbox.addEventListener('dragover', function (e) {
+          e.preventDefault(); // 必须阻止默认事件
+      }, false);
+      dragbox.addEventListener('drop', function (e) {
+          e.preventDefault(); // 阻止默认事件
+            var files = e.dataTransfer.files; //获取文件
+            appendFile(files, '.list-drag')
+          // code
+      }, false);
+
+      function appendFile (files, listName) {
+        for( file of files ) {
+          let url = window.URL.createObjectURL(file);
+          let liStr = `
+            <li class="list-group-item">
+              <div>
+                <img src="${url}" alt="文件" />
+              </div>
+            </li>
+          `;
+          $(listName).append(liStr);
+        }
+      }
+
+
+
+
+
+   </script>
+
+</body>
+</html>
