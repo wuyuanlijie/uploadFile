@@ -3,6 +3,7 @@
 ## 前端入坑中，快拉我一把！！！
  > 以前总认为前端就是做网页，做网页。。。是的，目前我还是这样认为！哈哈哈，我还是初学者，俗称‘宝宝’。<br>
  今天我要介绍的是如何去上传文件，这对于那些老玩家来说,小菜一碟，就如同你拿着一把无尽，而我还是一把长剑···<br>
+ ![Alt text](https://raw.githubusercontent.com/wuyuanlijie/ImageFile/master/uploadGif.gif)
 
 ## 言归正传
 上传文件的方式有很多种，我这里只介绍两种点击上传和拖放上传。由于目前没有学习如何将文件数据传到服务器，
@@ -14,7 +15,7 @@
 2. JQuery教程:[优秀的JavaScript代码库](http://www.w3school.com.cn/jquery/)“write Less，Do More”链式调用减少标签的声明。<br>
 
 ## 拖拽上传
-
+![Alt text](https://github.com/wuyuanlijie/ImageFile/blob/master/upload.png)
 先在body声明一个div类名为dragFile，便于后面js绑定drag事件,并且创建一个盒子list-drag来放置文件预览效果。
 ```html
     <div class="col-md-5 col-md-offset-1 up-content  dragFile">
