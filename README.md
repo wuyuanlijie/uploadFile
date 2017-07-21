@@ -114,7 +114,7 @@
 https://github.com/wuyuanlijie/UploadFiles
 
 ## WHO I AM ？
-**本人江西财经大学大三学生，热爱前端、喜欢切图、足球keeper、LOL（为了Full Stack，目前不玩了，但是仅仅是目前，哈哈哈）、王者荣耀...目前正在努力coding...目的：秋招<br>** 
+**本人江西财经大学大三学生，热爱前端、足球keeper、LOL、王者荣耀...目前正在努力coding...目的：秋招<br>** 
 ## Find ME! 
 **WeChat: JerryLeelisa   Email: wuyuanlijie@qq.com**
  
