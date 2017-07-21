@@ -35,7 +35,7 @@
  3. drop事件在选取文件位置放置在目标区域时触发，同时我们也要在这里阻止默认事件添加上述的方法。并且通过e.dataTransfer.files
  来获取拖拽上传的文件列表信息
  4. 这里我运用到es6的知识，强大的for-of循环，遍历文件数组，并且window.URL.createObjectURL(file)
- 将根据传入的文件参数创建一个指向该参数对象的URL。es6果然很难厉害，利用模板字符串[深入浅出ES6（四）：模板字符串]{http://www.infoq.com/cn/articles/es6-in-depth-template-string}可以多行书写，模板字符串中所有的空格、新行、缩进，
+ 将根据传入的文件参数创建一个指向该参数对象的URL。es6果然很难厉害，利用模板字符串[深入浅出ES6（四）：模板字符串](http://www.infoq.com/cn/articles/es6-in-depth-template-string)可以多行书写，模板字符串中所有的空格、新行、缩进，
  都会原样输出在生成的字符串中，然后一个append()方法就可以将文档信息插入到ul下。
  
  ```javascript
