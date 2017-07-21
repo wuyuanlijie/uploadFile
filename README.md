@@ -67,8 +67,9 @@
 
  ```
  ## 点击上传
- 这里我就直接po出代码，相信大家很容易看的懂！<br>
- 等等！还是讲讲一个我认为值得学习的东西,因为系统自定义的input标签很丑，所以我们一般都会display:none将它隐藏，然后创建一个button按钮来绑定它
+ >这里我就直接po出代码，相信大家很容易看的懂！<br>
+ 
+ Wait！还是讲讲一个我认为值得学习的东西,因为系统自定义的input标签很丑，所以我们一般都会display:none将它隐藏，然后创建一个button按钮来绑定它
  Bootstrap有很多按钮的样式我们可以直接用它的。牛逼的jQuery拥有它的链式调用强大武器，我们可以检索到按钮点击后，直接绑定input的点击事件。
  ```html
   <div class="col-md-5 up-content btnFile">
@@ -112,7 +113,7 @@
 https://github.com/wuyuanlijie/UploadFiles
 
 ## WHO I AM ？
-**本人江西财经大学大三学生，热爱前端、喜欢切图、足球keeper、LOL（为了Full Stack，目前不玩了，但是仅仅是目前，哈哈哈）、王者荣耀...目前正在努力coding...为的是秋招<br>** 
+**本人江西财经大学大三学生，热爱前端、喜欢切图、足球keeper、LOL（为了Full Stack，目前不玩了，但是仅仅是目前，哈哈哈）、王者荣耀...目前正在努力coding...目的：秋招<br>** 
 ## Find ME! 
 **WeChat: JerryLeelisa   Email: wuyuanlijie@qq.com**
  
