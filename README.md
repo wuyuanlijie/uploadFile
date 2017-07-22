@@ -1,6 +1,6 @@
-# file文件上传的两种方式，点击按钮上传与拖放文件上传
+# file文件上传的两种方式——点击按钮上传与拖放文件上传
 
-## 前端入坑中，快拉我一把！！！
+## 前端入坑中！
  > 以前总认为前端就是做网页，做网页。。。是的，目前我还是这样认为！哈哈哈，我还是初学者，俗称‘宝宝’。<br>
  今天我要介绍的是如何去上传文件，这对于那些老玩家来说,小菜一碟，就如同你拿着一把无尽，而我还是一把长剑···<br>
  ![Alt text](https://raw.githubusercontent.com/wuyuanlijie/ImageFile/master/uploadGif.gif)
@@ -118,4 +118,4 @@ https://github.com/wuyuanlijie/UploadFiles
 ## Find ME! 
 **WeChat: JerryLeelisa   Email: wuyuanlijie@qq.com**
  
-> <br>最后如果您觉得对您学习小程序有帮助的话可以给一个star！谢谢！！！
+> <br>最后如果您觉得对您学习前端有帮助的话可以给一个star！谢谢！！！
