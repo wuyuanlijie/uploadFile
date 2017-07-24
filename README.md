@@ -1,20 +1,19 @@
-# file文件上传的两种方式——点击按钮上传与拖放文件上传
+# html5+js拖拽和点击上传
 
-## 前端入坑中！
- > 以前总认为前端就是做网页，做网页。。。是的，目前我还是这样认为！哈哈哈，我还是初学者，俗称‘宝宝’。<br>
- 今天我要介绍的是如何去上传文件，这对于那些老玩家来说,小菜一碟，就如同你拿着一把无尽，而我还是一把长剑···<br>
+## 1. 效果展示
+ > 文件上传说起来简单，但其实也不简单，里面涉及的东西很多。
  ![Alt text](https://raw.githubusercontent.com/wuyuanlijie/ImageFile/master/uploadGif.gif)
 
-## 言归正传
+## 2. 言归正传
 上传文件的方式有很多种，我这里只介绍两种点击上传和拖放上传。由于目前没有学习如何将文件数据传到服务器，
 我这里就只展示文件的预览效果。
 
-## 技术框架
+## 3. 技术框架
 之前不了解什么是前端框架,如今使用到了，豁然开朗，并且让我从切页面中解脱出来！现在技术更新很快，但是这两个框架让我很受用，或许以后会接触到更多新技术、新框架，却不会忘记它们如何让我们爱上前端工作。两个
 1. Bootstrap:[切页面你可以更快](http://www.bootcss.com/)简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。
 2. JQuery教程:[优秀的JavaScript代码库](http://www.w3school.com.cn/jquery/)“write Less，Do More”链式调用减少标签的声明。<br>
 
-## 拖拽上传
+## 4. 拖拽上传
 ![Alt text](https://github.com/wuyuanlijie/ImageFile/blob/master/upload.png)
 先在body声明一个div类名为dragFile，便于后面js绑定drag事件,并且创建一个盒子list-drag来放置文件预览效果。
 ```html
@@ -67,7 +66,7 @@
     }
 
  ```
- ## 点击上传
+ ## 5. 点击上传
  >这里我就直接po出代码，相信大家很容易看的懂！<br>
  
  Wait！还是讲讲一个我认为值得学习的东西,因为系统自定义的input标签很丑，所以我们一般都会display:none将它隐藏，然后创建一个button按钮来绑定它
@@ -113,9 +112,5 @@
 ## 项目地址：
 https://github.com/wuyuanlijie/UploadFiles
 
-## WHO I AM ？
-**本人江西财经大学大三学生，热爱前端、足球keeper、LOL、王者荣耀...目前正在努力coding...目的：秋招<br>** 
-## Find ME! 
-**WeChat: JerryLeelisa   Email: wuyuanlijie@qq.com**
  
-> <br>最后如果您觉得对您学习前端有帮助的话可以给一个star！谢谢！！！
+> <br>最后如果您觉得本文如有什么写的错误的，大家请指出错误，共同进步！
